@@ -1,0 +1,27 @@
+{
+  "name": "network-data-access-point",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "js-yaml": "^3.13.1",
+    "massive": "^6.2.0",
+    "pg-compare": "^0.2.2",
+    "uuid": "^7.0.2"
+  },
+  "namespace": {
+    "@model": "${ process.cwd() }/model",
+    "@module": "${ process.cwd() }/module",
+    "@schema": "${ process.cwd() }/.schema",
+    ".endpoint": "${ process.cwd() }/.endpoint",
+    ".database": "${ process.cwd() }/.database",
+    ".migrate": "${ process.cwd() }/.migrate"
+  }
+}
